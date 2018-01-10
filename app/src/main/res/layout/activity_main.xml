@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bazu.bwei.www.one_quarter_our.MainActivity">
+    <RelativeLayout
+        android:id="@+id/relativelayout"
+        android:background="#05a9f4"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            app:placeholderImage="@mipmap/ic_launcher_round"
+            android:id="@+id/img_tou"/>
+        <TextView
+            android:layout_toRightOf="@+id/img_tou"
+            android:id="@+id/title"
+            android:layout_width="380dp"
+            android:layout_height="50dp"
+            android:gravity="center_horizontal"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:text="段子"
+            android:textColor="#fffaf9"/>
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bianji"
+            android:layout_toRightOf="@+id/title"/>
+
+    </RelativeLayout>
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:layout_below="@+id/relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/xiv">
+
+    </com.jcodecraeer.xrecyclerview.XRecyclerView>
+
+
+
+</RelativeLayout>

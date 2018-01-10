@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   >
+<RelativeLayout
+    android:layout_marginLeft="15dp"
+    android:layout_marginTop="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/xrv_img_tou"
+
+        app:placeholderImage="@mipmap/ic_launcher_round"/>
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/xrv_tv_name"
+        android:layout_toRightOf="@+id/xrv_img_tou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="天蝎喝牛奶"/>
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/xrv_tv_name"
+        android:layout_toRightOf="@+id/xrv_img_tou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:text="2017-05-23 14:25"/>
+
+
+
+</RelativeLayout>
+
+
+</RelativeLayout>
